@@ -1,0 +1,440 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	font-family: "宋体";
+}
+.clear{
+	clear: both;
+	overflow: hidden;
+	height: 0px;
+}
+/*--------------头部*/
+.top{
+	width: 100%;
+	height: 58px;
+	background-color: #191d3a;
+	/*固定导航*/
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	/*层*/
+	z-index: 1000;
+}
+.top .wrap{
+	width: 1000px;
+	height: 58px;
+	margin: 0px auto;
+}
+.top .wrap .logo{
+	width: 185px;
+	height: 58px;
+	background-image: url(../img/images/logo.png);
+	background-size: cover;
+	
+	float: left;
+}
+.top .wrap ul li{
+	list-style: none;
+	float: left;
+	width: 100px;
+	height: 58px;
+	text-align: center;
+	line-height: 58px;
+}
+.top .wrap ul li a{
+	display: block;
+	width: 100px;
+	height: 58px;
+	
+	color: #816a5c;
+	text-decoration: none;
+}
+.top .wrap ul li a:hover{
+	color: #fff;
+	background: orange;
+}
+.top .wrap .jrwm{
+	float: left;
+	width: 100px;
+	padding-left: 50px;
+	padding-top: 13px;
+}
+/*----------------banner-------*/
+					/*.banner{
+						height: 465px;
+						background: url(../img/images/banner.jpg) center top no-repeat;
+						父级相对定位
+						position: relative;
+					}
+					.banner .dian{
+						/*子集绝对定位*/
+						/*position: absolute;
+						left: 50%;
+						margin-left: -70px;
+						bottom: 30px;
+						width: 140px;
+						height: 12;
+					}
+					.banner .dian ol li{
+						list-style: none;
+						display: inline-block;
+						width: 15px;
+						height: 15px;
+						/*圆*/
+						/*border-radius: 50%;
+						background: white;
+						margin-left: 7px;
+						cursor: pointer;/*小手*/
+					/*}
+					.banner .dian ol li:hover{
+						background: orange;
+					}*/
+/*内容部分*/
+/*游戏*/
+.content{
+	width: 1000px;
+	margin: 0px auto;
+	
+}
+.content #bygame{
+	height: 230px;
+	/*边框*/
+	padding-top: 50px;
+	border-bottom: 1px solid #dbe1e7;
+	/*定位*/
+	position: relative;
+}
+.content #bygame ul li{
+	float: left;
+	list-style: none;
+	width: 230px;
+	padding: 0px 10px;
+	text-align: center;
+}
+.content #bygame ul li img{
+	width: 230px;
+	height:130px;
+}
+.content #bygame ul li h3{
+	height: 30px;
+	line-height: 30px;
+	font-size: 16px;
+}
+.content #bygame ul li p a{
+	text-decoration: none;
+	color: #30bc71;
+	font-size: 14px;
+	padding-right: 6px;
+	background: url(../img/images/sanjiaoxing.png)no-repeat center right;
+}
+.content #bygame .dian1{
+	position: absolute;
+	left: 50%;
+	margin-left: -60px;
+	bottom: -3px;
+	
+	width: 120px;
+	height: 12px;
+	background: #ffffff;
+}
+.content #bygame .dian1 ol li{
+	list-style: none;
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	margin-left: 10px;
+	background: #b5c0cb;
+	cursor: pointer;
+}
+.content #bygame .dian1 ol li:hover{
+	background: #2fbc71;
+}
+/*新闻*/
+.content #bynewZhao{
+	height: 320px;
+	padding-top: 50px;
+}
+.content #bynewZhao .xinwen{
+	position: relative;
+	float: left;
+	width: 500px;
+	height: 320px;
+	background: url(../img/images/bynewsbg.jpg) left top no-repeat;
+}
+.content #bynewZhao .xinwen .more{
+	position: absolute;
+	left: 215px;
+	top: 40px;
+}
+.content #bynewZhao .xinwen ul{
+	padding-top: 115px;
+}
+.content #bynewZhao .xinwen ul li{
+	list-style: none;
+	height: 50px;
+	width: 460px;
+	line-height: 50px;
+	border-bottom: 1px solid #dbe1e7;
+}
+.content #bynewZhao .xinwen ul li .time{
+	font-size: 14px;
+	color:lightgray;
+	padding:0px 20px;
+}
+.content #bynewZhao .xinwen ul li a{
+	text-decoration: none;
+	color: #000;
+	font-size: 12px;
+}
+.content #bynewZhao .xinwen ul li a:hover{
+	color:#2FBC71;
+}
+/*招聘*/
+.content #bynewZhao .zhao{
+	position: relative;
+	float: left;
+	width: 500px;
+	height: 300px;
+	background: url(../img/images/byhrbg3.jpg);
+}
+.content #bynewZhao .zhao .more{
+	position: absolute;
+	left: 200px;
+	top: 40px;
+}
+.content #bynewZhao .zhao .tou{
+/*	width: px;*/
+	height: 50px;
+	padding-top: 40px;
+	padding-left: 80px;
+	color: white;
+}
+.content #bynewZhao .zhao .tou p{
+	font-size: 12px;
+}
+.content #bynewZhao .zhao .zpgw{
+	color: white;
+	font-size: 14px;
+	width: 310px;
+	height: 170px;
+	padding-left: 20px;
+	padding-top: 10px;
+}
+.content #bynewZhao .zhao .zpgw ul li{
+	list-style: none;
+	width: 300px;
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid #6fdea3;
+}
+.content #bynewZhao .zhao .zpgw ul li a{
+	text-decoration: none;
+	color: white;
+}
+.content #bynewZhao .zhao .zpgw ul li a:hover{
+	color:#2FBC71;
+}
+/*关于我们*/
+#byguanyus{
+	width: 100%;
+	height: 600px;
+	background-image: url(../img/bg3_02.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+#byguanyu{
+	width: 1000px;
+	height: 600px;
+	margin: 0px auto;
+}
+#byguanyu hr{
+	margin: 0px;
+	padding: 0px;
+}
+#byguanyu h1{
+	padding-top: 20px;
+	width: 1000px;
+	height: 50px;
+}
+#byguanyu .bywomen{
+	width: 1000px;
+	height: 550px;
+}
+#byguanyu .bywomen ul li{
+	list-style: none;
+	position: relative;
+	top: 50px;
+	width: 200px;
+	height: 50px;
+	border-bottom: 1px solid gray;
+	cursor: pointer;
+}
+#byguanyu .bywomen ul li .mulu{
+	line-height: 50px;
+	font-size: 20px;
+}
+#byguanyu .bywomen ul li ul li{
+	display: none;
+	position: absolute;
+	left: 200px;
+	/*left: 200px;
+	top: -10px;*/
+	width: 700px;
+	height: 500px;
+	overflow: hidden;
+	overflow-y: scroll;
+	padding:0px 50px;
+}
+#byguanyu .bywomen ul li ul .l1{
+	top: -10px;
+}
+#byguanyu .bywomen ul li ul .l2{
+	top: -60px;
+}
+#byguanyu .bywomen ul li ul .l3{
+	top: -110px;
+}
+#byguanyu .bywomen ul li ul .l4{
+	top: -160px;
+}
+#byguanyu .bywomen ul li ul .l4 .h1,.h2,.h3,.h4{
+	position: absolute;
+	left: 80px;
+}
+#byguanyu .bywomen ul li ul .l4 .h1{
+	color: #2FBC70;
+	top: 28px;
+}
+#byguanyu .bywomen ul li ul .l4 .h2{
+	top:142px;
+	color: #FFA500;
+}
+#byguanyu .bywomen ul li ul .l4 .h3{
+	top: 262px;
+	color: #007AFF;
+}
+#byguanyu .bywomen ul li ul .l4 .h4{
+	top: 378px;
+	color: blueviolet;
+}
+#byguanyu .bywomen ul li ul .l4 h1{
+	padding-left: 150px;
+	top: 20px;
+	left: 100px;
+}
+#byguanyu .bywomen ul li ul .l5{
+	top: -210px;
+}
+#byguanyu .bywomen ul li:hover ul li{
+	display: block;
+}
+#byguanyu .bywomen ul li ul li p{
+	font-size: 15px;
+	text-indent: 2em;
+	padding: 15px 0px;
+}
+/*客服*/
+#byke{
+	width: 1000px;
+	height: 50px;
+	margin: 0px auto;
+	margin-top: 20px;
+}
+#byke h1{
+	background: url(../img/biaoji_03.jpg) left no-repeat;
+	padding-left: 30px;
+}
+.bykefu{
+	width: 100%;
+	height:535px;
+}
+.bykefu .kefu1{
+	background-image: url(../img/kefu_02.jpg);
+	height: 360px;
+	width: 100%;
+	background-size: cover;
+	margin-top: 10px;
+}
+.bykefu .kefu5{
+	margin: 0px auto;
+	width: 1100px;
+}
+.bykefu .kefu2,.kefu3,.kefu4{
+	height: 135px;
+	width: 320px;
+	background-size: cover;
+	float: left;
+	margin: 20px 20px;
+}
+.bykefu .kefu2{
+	background-image: url(../img/kefu_06.jpg);
+}
+.bykefu .kefu3{
+	background-image: url(../img/kefu_08.jpg);
+}
+.bykefu .kefu4{
+	background-image: url(../img/kefu_10.jpg);
+}
+/*尾部*/
+.foot{
+	height: 90px;
+	line-height: 90px;
+	background: #191d3a;
+	font-size: 10px;
+	color: #007AFF;
+}
+.foot .footin{
+	width: 1000px;
+	margin: 0px auto;
+}
+.foot .footin .inleft{
+	float: left;
+	
+}
+.foot .footin .inleft a{
+	color: #007AFF;
+	text-decoration: none;
+	
+}
+.foot .footin .inright{
+	float: right;
+	position: relative;
+	padding-right: 50px;
+}
+.foot .footin .inright img{
+	position:absolute;
+	top:50%;
+	right: 0px;
+	margin-top: -20px;
+	
+	height: 40px;
+	width: 30px;
+}
+/*-----------返回头部-------*/
+.toTOP{
+	position: fixed;
+	width: 70px;
+	height: 30px;
+	background: #c7d6e5;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 30px;
+	right: 30px;
+    bottom:60px;
+}
+.toTOP a{
+	text-decoration: none;/*去掉下划线*/
+	font-weight: bold;
+	font-size: 12px;
+	color:white;
+	
+}
+.toTOP img{
+	width: 10px;
+	height: 8px;
+	margin-right: 3px;
+	margin-top: 2px;
+}

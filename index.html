@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<style type="text/css">
+			/*加载分页器*/
+			.swiper-pagination-bullet{
+				width: 15px;
+				height: 15px;
+			}
+		</style>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="top">
+			<div class="wrap">
+				<div class="logo"></div>
+				<ul>
+					<li><a href="#">首页</a></li>
+					<li><a href="#bygame">博雅游戏</a></li>
+					<li><a href="#bynewZhao">博雅新闻</a></li>
+					<li><a href="#byguanyu">关于我们</a></li>
+					<li><a href="#byke">客服中心</a></li>
+					<li><a href="#">投资者关系</a></li>
+				</ul>
+				<div class="jrwm">
+					<img src="img/images/jrwm.png"/>
+				</div>
+				<div class="clrar"></div>
+			</div>
+		</div>
+		<!--banner图-->
+		<!--<div class="banner">
+			<div class="dian">
+				<ol>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ol>
+			</div>
+		</div>-->
+		<div class="swiper-container">
+		    <div class="swiper-wrapper">
+		        <div class="swiper-slide">
+		        	<img src="img/images/banner.jpg"/>
+		        </div>
+		        <div class="swiper-slide">
+		        	<img src="img/images/banner.jpg"/>
+		        </div>
+		        <div class="swiper-slide">
+		        	<img src="img/images/banner.jpg"/>
+		        </div>
+		    </div>
+		    <!-- 如果需要分页器 -->
+		    <div class="swiper-pagination swiper-pagination-white"></div>
+		    
+		    <!-- 如果需要导航按钮 -->
+		    <div class="swiper-button-prev"></div>
+		    <div class="swiper-button-next"></div>
+		    
+		    <!-- 如果需要滚动条 -->
+		    <!--<div class="swiper-scrollbar"></div>-->
+		</div>
+		<script src="js/swiper.min.js"></script>
+		<script>       
+			  var mySwiper = new Swiper ('.swiper-container', {
+//			    direction: 'vertical',
+			    loop: true,//循环播放
+			    autoplay:1000,//----自动播放   1s一张图片
+			    autoplayDisableOnInteraction:false,//--让点击分页按钮后继续播放
+			    speed:1000,//轮播速度
+			    // 如果需要分页器
+			    pagination: '.swiper-pagination',
+			    paginationClickable: true,//分页能否被点击
+			    // 如果需要前进后退按钮
+			    nextButton: '.swiper-button-next',
+			    prevButton: '.swiper-button-prev',
+			    
+			    // 如果需要滚动条
+//			    scrollbar: '.swiper-scrollbar',
+			  })        
+		</script>
+		<!--内容部分-->
+		<div class="content">
+			<!--游戏-->
+			<div id="bygame">
+				<ul>
+					<li>
+						<img src="img/images/pro1.jpg"/>
+						<h3>BPT宣传片</h3>
+						<p>
+							<a href="#">点击播放</a>
+						</p>
+					</li>
+					<li>
+						<img src="img/images/pro2.jpg"/>
+						<h3>博雅互动宣传视频</h3>
+						<p>
+							<a href="#">点击播放</a>
+						</p>
+					</li>
+					<li>
+						<img src="img/images/pro3.jpg"/>
+						<h3>斗地主</h3>
+						<p>
+							<a href="#">点击播放</a>
+						</p>
+					</li>
+					<li>
+						<img src="img/images/pro4.jpg"/>
+						<h3>德中扑克</h3>
+						<p>
+							<a href="#">点击播放</a>
+						</p>
+					</li>
+				</ul>
+				<!--点-->
+				<div class="dian1">
+					<ol>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ol>
+				</div>
+			</div>
+			
+			<!--新闻-->
+			<div id="bynewZhao">
+				<div class="xinwen">
+					<p class="more">
+						<a href="#">
+							<img src="img/images/more1.png"/>
+						</a>
+					</p>
+					<ul>
+						<li>
+							<span class="time">09 / 28</span>
+							<a href="css/">2015博雅国际扑克大赛（BPT）在澳门举行</a>
+						</li>
+						<li>
+							<span class="time">08 / 26</span>
+							<a href="css/">2015 BPT博雅国际扑克大赛重磅来袭</a>
+						</li>
+						<li>
+							<span class="time">08 / 01</span>
+							<a href="css/">博雅互动与阿里游戏联手启动“淘宝杯首届电视棋牌大赛”</a>
+						</li>
+						<li>
+							<span class="time">07 / 21</span>
+							<a href="css/">湖南省省长社家毫一行参观博雅互动</a>
+						</li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+				<div class="zhao">
+					<div class="tou">
+						<h2>专场招聘</h2>
+						<p>BOYYA JOBS</p>
+					</div>
+					<p class="more">
+						<a href="#">
+							<img src="img/images/more2.png"/>
+						</a>
+					</p>
+					<div class="zpgw">
+						<h3>专场招聘岗位</h3>
+						<ul>
+							<li><a href="#">PHP开发工程师</a></li>
+							<li><a href="#">C++开发工程师</a></li>
+							<li><a href="#">WEB前端开发工程师</a></li>
+							<li><a href="#">大数据开发工程师</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<!--关于我们-->
+		<div id="byguanyus">
+			<div id="byguanyu">
+				<h1>关于我们</h1>
+					<hr />
+				<div class="bywomen">
+					<ul>
+						<li>
+							<span class="mulu">
+								博雅简介
+							</span>
+							<ul>
+								<li class="l1">
+									<p>
+										博雅互动(香港)有限公司于2004年由张伟先生创立，是中国领先的棋牌类游戏开发商和运营商。2013年11月12日，博雅互动国际有限公司在香港联交所成功上市（股票代号HK0434）。
+									</p>
+									<p>
+										博雅互动以专注的精神和独特的创意设计能力，通过自主研发和多平台精细化运营，打造了多款长久经典的网络棋牌类游戏，如博雅德州扑克、博雅斗地主、博雅中国象棋、博雅四川麻将等。
+									</p>
+									<p>
+										近年来，博雅互动在中国及海外市场稳步增长，公司旗下游戏已在100多个国家和地区上线，全球累计注册玩家超过7亿。博雅互动拥有强大的游戏本地化能力，能够使用本地语言重新包装游戏，改进游戏特色迎合本地文化及市场需求，旗下最受欢迎的游戏——博雅德州扑克，就有17种语言版本。
+									</p>
+									<p>
+										博雅互动拥有先进的自主研发体系，公司70%以上员工为技术人员，在存储技术、数据挖掘、分布式网络、引擎技术等方向都积累了相当数量的专利，在业内专利申请总量位居前列。
+									</p>
+									<p>
+										完善的技术基础设施、数据分析和尽责的客户服务，令博雅互动能持续不断地改进游戏，提供超凡的玩家体验和打造具有吸引力的玩家社区。通过这些努力，博雅互动已树立了一个领先的网络棋牌类游戏品牌形象，并在国内外斩获诸多荣誉。2014年，博雅互动在《福布斯》公布的“中国最具潜力中小企业榜单”中位居榜首。2016年，博雅互动获得中国融资上市公司大奖之“最具潜力上市公司奖”，同年，正式成为了国家体育总局战略合作伙伴。
+									</p>
+									<p>
+										博雅互动致力为社会各年龄层人群提供健康益智、休闲便捷的多平台游戏体验，以践行“无处不在，分享快乐”的企业愿景。不论玩家使用的是移动端、PC端还是智能电视端，均能下载到相应版本的游戏，“随时、随地”享受到博雅互动游戏产品所带来的快乐。
+									</p>
+									<p>
+										未来，博雅互动将会继续专注于棋牌类游戏的研发，加大市场渗透力度、进一步拓展全球业务、聚焦用户体验、持续提升玩家所得收益，努力朝“网络棋牌类游戏百年品牌”的目标迈进。
+									</p>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<span class="mulu">
+								发展历程
+							</span>
+							<ul>
+								<li class="l2">
+									<h1>2017年</h1>
+									<p>博雅互动携手近二十家顶级游戏资本、棋牌企业共同发起国内首个棋牌游戏联盟——TOP棋牌智力游戏联盟</p>
+									<p>在2016年度“金港股”评选颁奖典礼上，获评“最具成长性上市公司”</p>
+									<p>蝉联2016年度中国融资上市公司大奖 “最具潜力上市公司奖”</p>
+									<h1>2016年</h1>
+									<p>在中国·三亚成功举办博雅国际扑克大赛（BPT）海天盛筵站，成为12月海天盛筵展会重要的组成部分</p>
+									<p>注册用户超过7亿</p>
+									<p>第二届博雅国际扑克大赛（BPT）10月在中国·澳门圆满落幕，共吸引来自16个国家的300名选手参赛</p>
+									<p>荣获国家体育总局战略合作伙伴资质，将与总局合作举办趣味棋牌赛事</p>
+									<p>在“2015中国融资上市公司大奖”颁奖典礼上，荣获“最具潜力上市公司奖”</p>
+									<p>泰国分公司在泰国本地开展“捐资助学，为爱启程爱心拉力赛”，为贫困学校的孩子们送去学习和生活用品，切实履行社会责任</p>
+									<p>与乐视体育携手发布定制新游戏——乐视欢乐斗地主，开启了棋牌赛事直播互动的新模式</p>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<span class="mulu">
+								产品布局
+							</span>
+							<ul>
+								<li class="l3">
+									<h1 style="margin-left: 170px;">产品覆盖国家和地区:</h1>
+									<p>博雅透过多元化的游戏分销平台，向玩家宣传及推广网页和移动游戏。网页游戏主要通过社交网站及网页游戏门户网站，以及博雅自己的游戏门户网站进行分销；移动游戏则通过网上应用商店及区域性网络游戏门户网站进行分销。</p>
+									<p>博雅高质量的游戏被业内主流的分销平台认可，而与顶尖平台的合作，也确保了博雅游戏产品的可持续性和玩家的长期活跃度。同时，多元化的推广平台，有助于博雅游戏的全球市场推广及宣传。此外，博雅不依赖于任何单一平台，多渠道的均衡发展大幅降低了公司运营和推广的风险。</p>
+									<h1 style="margin-left: 210px;">主要合作伙伴:</h1>
+									<p>公司网页游戏主要依靠游戏分销平台进行推广和发布，其中包括社交网站和网络游戏门户网站的游戏分销平台，以及全球性和区域性的网上应用商店及网络游戏的门户网站。</p>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<span class="mulu">
+								企业文化
+							</span>
+							<ul>
+								<li class="l4">
+									<h2 class="h1">愿景:</h2><h1>无处不在，分享快乐</h1>
+									<p>我们力争成为世界一流的游戏公司，随时随地给人们提供无尽的快乐，享受无处不在的开心。</p>
+									<h2 class="h2">使命:</h2><h1>为用户创造高品质的游戏体验</h1>
+									<p>为用户创造具备一流品质和完美体验的游戏产品是博雅人永恒的追求！</p>
+									<h2 class="h3">价值观:</h2><h1> 关爱 共赢 勇于创新 全力以赴</h1>
+									<p>待人真诚，彼此包容，为人正直，懂得感恩，一起营造一个轻松快乐的大家庭。</p>			
+									<h2 class="h4">管理理念:</h2><h1>共同成长 打造学习型团队</h1>
+									<p>心有多大，舞台就有多大</p>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<span class="mulu">
+								联系我们
+							</span>
+							<ul>
+								<li class="l5">
+									<h1>咨询联系</h1>
+									<p>香港总部地址：香港铜锣湾勿地臣街1号时代广场二座36楼</p>
+									<p>深圳分公司地址:深圳市南山区中山园路1001号TCL产业园国际E城D3栋9B-C</p>
+									<h1>媒体垂询</h1>
+									<p>联系人：谢小姐</p>
+									<p>邮箱：cathyxie@boyaa.com</p>
+									<h1>商务合作</h1>
+									<p>联系人：熊小姐</p>
+									<p>邮箱：tinaxiong@boyaa.com</p>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--客服-->
+		<div id="byke">
+			<h1>客服中心</h1>
+			<hr />
+		</div>
+		<div class="bykefu">
+			<div class="kefu1">
+			</div>
+			<div class="kefu5">
+				<div class="kefu2">
+				
+				</div>
+				<div class="kefu3">
+					
+				</div>
+				<div class="kefu4">
+					
+				</div>
+				<div class="clear">
+				
+				</div>
+			</div>	
+		</div>
+		<!--尾部-->
+		<div class="foot">
+			<div class="footin">
+				<div class="inleft">
+					<a href="#">网站地图</a>
+					<span>丨</span>
+					<a href="#">免费声明</a>
+				</div>
+				<div class="inright">
+					<span>
+						CopyRight&copy;2004-2014博雅互动（Boyaa Inteactiove）粤ICP备05062536号 增值电信业务许可证：B2-20110513
+					</span>
+					<img src="img/images/govIcon.gif"/>
+				</div>
+			</div>
+		</div>
+		<div class="toTOP">
+			<img src="img/images/top.png"/>
+			<a href="#">TOP</a>
+		</div>
+	</body>
+</html>
